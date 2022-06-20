@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 2.	Viết một function xoá các phần từ trùng lặp trong một mảng các số:
+    Input: [1, 2, 3, 5, 4, 2, 6, 4]
+    Output: [1, 2, 3, 5, 4, 6] -->
+    
+    <script>
+
+        let num = [1, 2, 3, 5, 4, 2, 6, 4];
+        let result = [];
+        result = num.filter(function (element) {
+            return result.includes(element) ? '' : result.push(element)
+        });
+
+        console.log(result);
+    </script>
+</body>
+
+</html>
